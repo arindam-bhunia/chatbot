@@ -38,16 +38,17 @@ Built with **LangChain**, **Streamlit**, and Hugging Face Transformers.
 ### 2. Create a virtual environment (recommended)
 python -m venv venv
 
-# Activate the virtual environment
-# Linux / macOS:
-source venv/bin/activate
-# Windows:
-# venv\Scripts\activate
+**Activate the virtual environment**
+Linux / macOS:
 
-# 3. Install dependencies
+source venv/bin/activate
+Windows:
+venv\Scripts\activate
+
+### 3. Install dependencies
 pip install -r requirements.txt
 
-# Note: First run may take time as it downloads ~400MB of BERT models.
+Note: First run may take time as it downloads ~400MB of BERT models.
 
 
 
