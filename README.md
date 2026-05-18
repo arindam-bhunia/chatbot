@@ -54,6 +54,7 @@ Note: First run may take time as it downloads ~400MB of BERT models.
 
 ```bash
 streamlit run app.py
+```
 
 1. Upload a PDF from the sidebar
 2. Wait for indexing
