@@ -50,6 +50,58 @@ pip install -r requirements.txt
 
 Note: First run may take time as it downloads ~400MB of BERT models.
 
+## 🎯 How to Run
+
+```bash
+streamlit run app.py
+
+1. Upload a PDF from the sidebar
+2. Wait for indexing
+3. Start asking questions!
+
+## 📁 Project Structure
+pdf-chatbot-bert/
+├── app.py # Streamlit UI
+├── chatbot.py # Core backend logic
+├── requirements.txt # Dependencies
+├── README.md
+└── chroma_/ # Auto-generated (temporary)
+
+## 🔍 How It Works
+
+1. PDF → Text extraction
+2. Split into overlapping chunks (~400 chars)
+3. Generate embeddings using BERT
+4. Store in ChromaDB vector database
+5. User question → Semantic search (top-k chunks)
+6. BERT QA model extracts precise answer
 
 
+## 🎨 UI Features
 
+- Modern dark theme
+- Confidence score with color coding
+- Source page references
+- Optional context preview
+- Session chat history
+- One-click clear chat
+
+## 🧠 Models
+- **Embedding Model**: `google-bert/bert-base-uncased`
+- **QA Model**: `deepset/bert-base-cased-squad2`
+
+---
+
+## 📌 Limitations
+- Extractive QA only (cannot generate creative answers)
+- Limited by BERT's 512 token context
+- First model download is slow
+
+---
+
+## 🛠️ Future Enhancements
+- Multi-document support
+- Better reranking
+- Larger / faster embedding models
+- Docker support
+- Persistent chat history
