@@ -1,4 +1,4 @@
-# 📄 PDF Chatbot — Google BERT + ChromaDB
+# 📄 PDF Chatbot — RAG and LangChain
 
 **A fully local, private, and fast PDF chatbot** powered by **Google BERT** (embeddings + extractive QA) and **ChromaDB**. No API keys, no internet required after installation.
 
